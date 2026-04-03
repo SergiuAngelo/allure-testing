@@ -24,6 +24,14 @@ jobs:
       - name: Run tests
         run: mvn clean test
 
+      - name: Get Allure history
+        run: |
+          git clone https://github.com/${{ github.repository }}.git gh-pages
+          if [ -d "gh-pages/history" ]; then
+            mkdir -p target/allure-results/history
+            cp -r gh-pages/history/* target/allure-results/history/
+          fi
+
       - name: Generate Allure Report
         run: |
           npm install -g allure-commandline --save-dev
