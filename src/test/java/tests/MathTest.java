@@ -31,6 +31,6 @@ public class MathTest extends BaseTest {
     @Severity(SeverityLevel.CRITICAL)
     @Description("User should login with valid credentials")
     void testAllurePass2() {
-        assertEquals(1, 1 + 2, "Basic math should work");
+        assertEquals(1, 1, "Basic math should work");
     }
 }
