@@ -26,7 +26,7 @@ jobs:
 
       - name: Get Allure history
         run: |
-          git clone https://github.com/${{ github.repository }}.git gh-pages
+          git clone --branch gh-pages https://github.com/${{ github.repository }}.git gh-pages || echo "No gh-pages branch yet"
           if [ -d "gh-pages/history" ]; then
             mkdir -p target/allure-results/history
             cp -r gh-pages/history/* target/allure-results/history/
