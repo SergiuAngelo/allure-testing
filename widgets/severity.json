@@ -1,0 +1,1 @@
+[{"uid":"d1f88ae967ee0e98","name":"testAllurePass()","time":{"start":1775223326341,"stop":1775223326772,"duration":431},"status":"passed","severity":"critical"},{"uid":"a84b3f2717bbb371","name":"testAllureFail()","time":{"start":1775223320807,"stop":1775223326298,"duration":5491},"status":"failed","severity":"critical"}]
