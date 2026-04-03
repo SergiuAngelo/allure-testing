@@ -25,4 +25,12 @@ public class MathTest extends BaseTest {
     void testAllureFail() {
         assertEquals(1, 1 + 2, "Basic math should work");
     }
+
+    @Test
+    @Story("Basic Math pass")
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("User should login with valid credentials")
+    void testAllurePass2() {
+        assertEquals(1, 1 + 2, "Basic math should work");
+    }
 }
